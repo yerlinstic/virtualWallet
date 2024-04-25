@@ -1,0 +1,33 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+    background-color: #1e2857; 
+    color: white; 
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header__information {
+    font-size: 18px;
+}
+
+.header__login img {
+    width: 0px; 
+    height: 8px;
+    border-radius: 50%; 
+}
+
+
+.header_ {
+    background-color: blueviolet;
+    padding: 20px;
+    margin-top: 20px;
+}
