@@ -7,8 +7,8 @@ body, html {
 
 .header {
     background-color: #1e2857; 
-    color: white; 
-    padding: 3px;
+    color: rgb(255, 255, 255); 
+    padding: 2px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,7 +16,7 @@ body, html {
 
 
 .header__information {
-    font-size: 18px;
+    font-size: 1px;
 }
 
 .header__login img {
@@ -27,7 +27,7 @@ body, html {
 
 
 .header_ {
-    background-color: blueviolet;
+    background-color: rgb(93, 179, 201);
     padding: 20px;
     margin-top: 20px;
 }
