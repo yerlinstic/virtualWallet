@@ -1,33 +1,52 @@
 
-body, html {
+body, h1, p, img {
     margin: 0;
     padding: 0;
 }
 
-
 .header {
-    background-color: #1e2857; 
-    color: rgb(255, 255, 255); 
-    padding: 2px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: rgb(25, 218, 224);
+    padding: 20px; 
+    text-align: center; 
 }
-
 
 .header__information {
-    font-size: 1px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
-.header__login img {
-    width: 0px; 
-    height: 8px;
-    border-radius: 50%; 
+.header__information img {
+    width: 100px; 
+    height: auto; 
 }
 
+.header__information h1 {
+    font-size: 24px;
+    margin-bottom: 10px; 
+}
 
-.header_ {
-    background-color: rgb(93, 179, 201);
-    padding: 20px;
-    margin-top: 20px;
+.header__information p {
+    font-size: 18px;
+    margin-bottom: 5px; 
+}
+.header_information2 {
+    background-color: #eee; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+.header_information2 h1 {
+    font-size: 24px; 
+    margin-bottom: 10px; 
+}
+
+.header_information2 p {
+    font-size: 18px;
+    margin-bottom: 5px; 
+}
+
+.header_information2 img {
+    width: 100px; 
+    height: auto; 
 }
