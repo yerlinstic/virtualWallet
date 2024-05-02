@@ -4,7 +4,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    width: 100%;
+    height: 100%;
 }
 
 div.container{
@@ -14,14 +15,13 @@ div.container{
     flex-direction: column;
     background-color: rgba(51, 64, 79, 1);
     align-items: center;    
-   
 }
 div.min-container{
     width: 100%;
     margin: 0%;
 }
 div.min-container:nth-child(1){
-    height: 50%;
+    height: 40%;
     margin:0;
     background-color: rgba(51, 64, 79, 1);
     display: flex;
@@ -73,7 +73,6 @@ div.column:nth-child(2){
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-start;
-    
 }
 .colum-menu{
     height: 5vh;
@@ -100,7 +99,7 @@ div.column:nth-child(2){
     justify-content: flex-end;
 }
 .menu{
-    width: 40%;
+    width: 30%;
 }
 .Word{
     width: 100%;
@@ -110,7 +109,6 @@ div.column:nth-child(2){
     align-items: center;
     padding: 0 0 0 5%;
     color: white;
-    
 }
 .column-money{
     height: 40%;
@@ -118,39 +116,41 @@ div.column:nth-child(2){
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
-   
 }
 
-.money{
-    height: 100%;
-    
+.money {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;/* Centrar verticalmente los elementos */
+    align-items: center;
+    height: 100%; /* Usar altura del viewport */
 }
 
 .money:nth-child(1){
     width: 50%;
-    color:white;
-    font-size: 1.5rem;
 }
 .money-up{
     margin:0;
     width:100%;
+    padding: 0 0 0 25%;
 }
 .money-up:nth-child(1){
+    height: 15%;
     font-family: 'Times New Roman';
     color:rgba(255, 255, 255, 1);
     font-size: 1rem;
 }
 .money-up:nth-child(2){
+    height: 15%;
     color:rgba(255, 255, 255, 1);
     font-size: 1.3rem;
 }
-
+.money-up:nth-child(3){
+    height: 15%;
+}
 .money-up .progress-fill {
     width: calc((15615 / 20000) * 100%);
 }
-
-
 .progress-bar {
     width: 60%;
     height: 10px;
@@ -159,13 +159,10 @@ div.column:nth-child(2){
     overflow: hidden;
     margin-top: 10px;
 }
-
 .progress-fill {
     height: 100%;
     background-color: #4caf50;
 }
-
-
 
 .money:nth-child(2){
     width: 50%;
@@ -173,15 +170,21 @@ div.column:nth-child(2){
 .money-down{
     margin:0;
     width:100%;
+    padding: 0 0 0 10%;
 }
 .money-down:nth-child(1){
     font-family: 'Times New Roman';
     color:rgba(255, 255, 255, 1);
     font-size: 1rem;
+    height: 15%;
 }
 .money-down:nth-child(2){
     color:rgba(255, 255, 255, 1);
     font-size: 1.3rem;
+    height: 15%;
+}
+.money-down:nth-child(2){
+    height: 15;
 }
 .money-down .progress-fill {
     width: calc((9615 / 20000) * 100%);
@@ -195,11 +198,160 @@ div.column:nth-child(2){
 
 
 div.min-container:nth-child(2){
-    height: 40%;
+    height: 53%;
     background-color: rgba(255, 255, 255, 1);
-    border-radius: 10%;
+    border-radius: 20%;
 }
+
+.Activities{
+    width: 100%;
+    height: 2%;
+    font-family:'Times New Roman';
+    font-size: 1.7rem;
+    padding: 0 0 0 5%;
+    color:rgba(51, 64, 79, 1);
+}
+
+.card{
+    height: 18vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    
+}
+.Account{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.equipo{
+    width: 70%;
+    height: auto;
+
+}
+.seguridad{
+    width: 70%;
+    height: auto;
+}
+.mensaje{
+    width: 70%;
+    height: auto;
+}
+.Transactions{
+    width: 100%;
+    height: 5%;
+    font-family:'Times New Roman';
+    font-size: 1.7rem;
+    padding: 0 0 0 5%;
+    color:rgba(51, 64, 79, 1);
+}
+
+.points{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(255, 255, 255, 1) ;
+}
+.point-up{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.buttom-up{
+    width: 20%;
+    height:100% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Arriba{
+    width: 50%;
+    height: auto;
+}
+.food{
+    width:40%;
+    font-size: 2vh;
+}
+.numbers{
+    width: 40%;
+    font-size: 2vh;
+}
+.point-down{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.buttom-down{
+    width: 20%;
+    height:100% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Abajo{
+    width: 50%;
+    height: auto;
+}
+.Shopi{
+    width:40%;
+    height: auto;
+    font-size: 2vh;
+}
+.numero{
+    width: 40%;
+    height: auto;
+    font-size: 2vh;
+}
+
 div.min-container:nth-child(3){
-    height: 10%;
+    height: 7%;
     background-color: rgba(51, 64, 79, 1);
+}
+.explore{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;  
+}
+.min-explore{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 8%;  
+}
+.casa{
+    width: 50%;
+    height: auto;
+}
+.libro{
+    width: 50%;
+    height: auto;
+}
+.window{
+    width: 50%;
+    height: auto;
+}
+.campana{
+    width: 50%;
+    height: auto;
+}
+.usuario{
+    width: 50%;
+    height: auto;
 }
