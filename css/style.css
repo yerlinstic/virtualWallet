@@ -1,52 +1,205 @@
 
-body, h1, p, img {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    
 }
 
-.header {
-    background-color: rgb(25, 218, 224);
-    padding: 20px; 
-    text-align: center; 
+div.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(51, 64, 79, 1);
+    align-items: center;    
+   
 }
-
-.header__information {
-    display: flex; 
-    justify-content: center; 
+div.min-container{
+    width: 100%;
+    margin: 0%;
+}
+div.min-container:nth-child(1){
+    height: 50%;
+    margin:0;
+    background-color: rgba(51, 64, 79, 1);
+    display: flex;
+    flex-direction: column;
+}
+.colum-start{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+div.column{
+    height: 5vh;
+    display: flex;
     align-items: center; 
 }
-
-.header__information img {
-    width: 100px; 
-    height: auto; 
+div.column:nth-child(1){
+    width: 50vw;
+    font-size: 1.2rem;
+    color: white;
+    padding: 0 0 0 5%;
 }
 
-.header__information h1 {
-    font-size: 24px;
-    margin-bottom: 10px; 
+div.column:nth-child(2){
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;
+}
+.Battery,.Wifi,.Connection{
+    height: auto;
+}
+.Battery{
+    width: 12%;
+}
+.Connection{
+    width: 12%;
+}
+.Wifi{
+    width: 12%;
 }
 
-.header__information p {
-    font-size: 18px;
-    margin-bottom: 5px; 
+.Menu{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    
 }
-.header_information2 {
-    background-color: #eee; 
-    padding: 20px; 
-    text-align: center; 
+.colum-menu{
+    height: 5vh;
+    margin: 0;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start
+}
+.colum-menu:nth-child(1){
+    width: 16%;
+    padding: 0 0 0 5%;
+}
+.grupo{
+    width: 50%;
+}
+.colum-menu:nth-child(2){
+    width: 50%;
+    font-size: 1.3rem;
+    color:white
+}
+.colum-menu:nth-child(3){
+    width: 34%;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu{
+    width: 40%;
+}
+.Word{
+    width: 100%;
+    height: 25%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 5%;
+    color: white;
+    
+}
+.column-money{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+   
 }
 
-.header_information2 h1 {
-    font-size: 24px; 
-    margin-bottom: 10px; 
+.money{
+    height: 100%;
+    
 }
 
-.header_information2 p {
-    font-size: 18px;
-    margin-bottom: 5px; 
+.money:nth-child(1){
+    width: 50%;
+    color:white;
+    font-size: 1.5rem;
+}
+.money-up{
+    margin:0;
+    width:100%;
+}
+.money-up:nth-child(1){
+    font-family: 'Times New Roman';
+    color:rgba(255, 255, 255, 1);
+    font-size: 1rem;
+}
+.money-up:nth-child(2){
+    color:rgba(255, 255, 255, 1);
+    font-size: 1.3rem;
 }
 
-.header_information2 img {
-    width: 100px; 
-    height: auto; 
+.money-up .progress-fill {
+    width: calc((15615 / 20000) * 100%);
+}
+
+
+.progress-bar {
+    width: 60%;
+    height: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #4caf50;
+}
+
+
+
+.money:nth-child(2){
+    width: 50%;
+}
+.money-down{
+    margin:0;
+    width:100%;
+}
+.money-down:nth-child(1){
+    font-family: 'Times New Roman';
+    color:rgba(255, 255, 255, 1);
+    font-size: 1rem;
+}
+.money-down:nth-child(2){
+    color:rgba(255, 255, 255, 1);
+    font-size: 1.3rem;
+}
+.money-down .progress-fill {
+    width: calc((9615 / 20000) * 100%);
+}
+
+
+
+
+
+
+
+
+div.min-container:nth-child(2){
+    height: 40%;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10%;
+}
+div.min-container:nth-child(3){
+    height: 10%;
+    background-color: rgba(51, 64, 79, 1);
 }
